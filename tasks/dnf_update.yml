@@ -1,0 +1,7 @@
+---
+# updates OS
+
+- name: Update Fedora
+  ansible.builtin.dnf:
+    name: "*"
+    state: latest

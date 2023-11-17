@@ -1,0 +1,35 @@
+---
+# loops through app list
+
+- name: DNF Installs
+  ansible.builtin.dnf:
+    name:
+      - steam
+      - onedriver
+      - gnome-tweaks
+      - thunderbird
+      - openrgb
+      - joystick-support
+      - pavucontrol
+      - lutris
+      - winetricks
+      - mangohud
+      - bibata-cursor-themes
+      - timeshift
+      - telnet
+      - nmap
+      - radeontop
+      - lm_sensors
+      - conky
+      - htop
+      - bless
+      - hwinfo
+      - i2c-tools
+      - gamescope-3.11.49-1.fc38
+      - collectd-sensors
+      - krita
+      - kdenlive
+      - flatpak
+    state: present
+
+

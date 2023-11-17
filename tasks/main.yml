@@ -1,2 +1,12 @@
 ---
 # tasks file for fed_apps
+
+- name: Update Fedora
+  include_task: dnf_update.yml
+
+- name: Install DNF packages
+  include_task: dnf_packages.yml
+
+- name: Install Flatpak packages
+  include_task: flatpak_packages.yml
+

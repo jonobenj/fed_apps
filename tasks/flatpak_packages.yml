@@ -1,0 +1,17 @@
+---
+# loops through installing flatpak packages
+
+- name: Check Flatpak is installed
+  ansible.builtin.dnf:
+    name: flatpak
+    state: present
+
+- name: Install Flatpak packages
+  ansible.builtin.flatpak:
+    name: 
+      - flatseal
+      - spotify
+      - discord
+      - minecraft
+      - gdm settings
+    state: present
