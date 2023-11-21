@@ -9,6 +9,9 @@ Application List
 #### DNF Packages
 
 * steam
+* git
+* vim
+* firefox
 * onedriver
 * gnome-tweaks
 * thunderbird
@@ -18,7 +21,7 @@ Application List
 * lutris
 * winetricks
 * mangohud
-* bibata-cursor-themes
+* bibata-cursor-themes *Package missing from repo currently
 * timeshift
 * telnet
 * nmap
@@ -29,7 +32,7 @@ Application List
 * bless
 * hwinfo
 * i2c-tools
-* gamescope-3.11.49-1.fc38
+* gamescope-3.11.49-1.fc38    *Fedora 39 only has 3.12.5-1.fc39, will require testing with Star Citizen
 * collectd-sensors
 * krita
 * kdenlive
@@ -67,9 +70,16 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+```yaml
+---
+
+- name: Fedora Build Playbook
+  hosts: all
+  tasks:
+    - name: Run Fedora Build Role
+      ansible.builtin.include_role:
+        name: fed_apps
+```
 
 License
 -------
