@@ -5,6 +5,7 @@
   ansible.builtin.dnf:
     name: flatpak
     state: present
+  become: true
 
 - name: Install Flatpak packages
   ansible.builtin.flatpak:
@@ -15,3 +16,4 @@
       - minecraft
       - gdm settings
     state: present
+  become: true

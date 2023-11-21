@@ -5,3 +5,4 @@
   ansible.builtin.dnf:
     name: "*"
     state: latest
+  become: true

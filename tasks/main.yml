@@ -2,11 +2,11 @@
 # tasks file for fed_apps
 
 - name: Update Fedora
-  ansible.builtin.include_task: dnf_update.yml
+  ansible.builtin.include_tasks: dnf_update.yml
 
 - name: Install DNF packages
-  ansible.builtin.include_task: dnf_packages.yml
+  ansible.builtin.include_tasks: dnf_packages.yml
 
 - name: Install Flatpak packages
-  ansible.builtin.include_task: flatpak_packages.yml
+  ansible.builtin.include_tasks: flatpak_packages.yml
 
