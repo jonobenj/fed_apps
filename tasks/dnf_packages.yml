@@ -1,10 +1,27 @@
 ---
 # loops through app list
 
+#- name: Add OneDriver Repo
+#  ansible.builtin.dnf_repository:
+#    name: 
+
+- name: Add OneDriver Repo
+  community.general.copr:
+    name: jstaf/onedriver
+  become: true
+
+- name: Add Bibata (Cursor) Repo
+  community.general.copr:
+    name: peterwu/rendezvous
+  become: true
+
 - name: DNF Installs
   ansible.builtin.dnf:
     name:
       - steam
+      - git
+      - vim
+      - firefox
       - onedriver
       - gnome-tweaks
       - thunderbird
@@ -14,7 +31,7 @@
       - lutris
       - winetricks
       - mangohud
-      - bibata-cursor-themes
+        #- bibata-cursor-themes #Package missing from repo currently
       - timeshift
       - telnet
       - nmap
@@ -25,7 +42,8 @@
       - bless
       - hwinfo
       - i2c-tools
-      - gamescope-3.11.49-1.fc38
+        #      Fedora 39 only has 3.12.5-1.fc39, will require testing with Star Citizen
+        #      - gamescope-3.11.49-1.fc38
       - collectd-sensors
       - krita
       - kdenlive

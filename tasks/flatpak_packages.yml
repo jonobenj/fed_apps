@@ -10,10 +10,10 @@
 - name: Install Flatpak packages
   ansible.builtin.flatpak:
     name: 
-      - flatseal
-      - spotify
-      - discord
-      - minecraft
-      - gdm settings
+      - com.github.tchx84.Flatseal
+      - com.spotify.Client
+      - com.discordapp.Discord
+      - com.mojang.Minecraft
+      - io.github.realmazharhussain.GdmSettings
     state: present
   become: true
