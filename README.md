@@ -1,4 +1,4 @@
-Role Name
+Fedora Application Installs
 =========
 
 This role loops through and installs all required applications
