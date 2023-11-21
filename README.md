@@ -21,7 +21,7 @@ Application List
 * lutris
 * winetricks
 * mangohud
-* bibata-cursor-themes *Package missing from repo currently
+* bibata-cursor-themes *Package missing from repo currently*
 * timeshift
 * telnet
 * nmap
@@ -32,7 +32,7 @@ Application List
 * bless
 * hwinfo
 * i2c-tools
-* gamescope-3.11.49-1.fc38    *Fedora 39 only has 3.12.5-1.fc39, will require testing with Star Citizen
+* gamescope-3.11.49-1.fc38    *Fedora 39 only has 3.12.5-1.fc39, will require testing with Star Citizen*
 * collectd-sensors
 * krita
 * kdenlive
